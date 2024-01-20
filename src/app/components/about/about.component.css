@@ -2,7 +2,7 @@
     margin:0;
     background: transparent;
 }
-span:first-child{
+.span-text{
     font-size: 3rem;
 }
 span{
@@ -11,7 +11,7 @@ span{
 }
 .paragraph{
     line-height: 1.5rem;
-     margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 /*grid*/
