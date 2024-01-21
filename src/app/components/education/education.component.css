@@ -1,3 +1,8 @@
 *{
-    margin-bottom: 0;
+    margin: 0;
+}
+.size-img{
+    width:2rem;
+    height: 2rem;
+    
 }

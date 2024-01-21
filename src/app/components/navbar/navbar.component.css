@@ -9,3 +9,6 @@
 .ul,a, li{
     background: #ecf0f1;
 }
+.border-svg{
+    border:#34495e solid 2px;
+}
