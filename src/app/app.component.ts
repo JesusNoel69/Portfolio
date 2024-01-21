@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { StartComponent } from './components/start/start.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationComponent } from './components/education/education.component';
@@ -19,7 +18,6 @@ import { LaptopComponent } from './components/laptop/laptop.component';
     ContactComponent,
     AboutComponent,
     SkillsComponent,
-    StartComponent,
     NavbarComponent,
     LaptopComponent],
   templateUrl: './app.component.html',
