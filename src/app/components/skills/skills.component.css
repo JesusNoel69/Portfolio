@@ -1,5 +1,14 @@
 *{
     margin:0;
     /* TODO: cambiar el fondo */
-    background: white;
+    background: transparent;
+}
+/* #ecf0f1 */
+.container-skills{
+    min-height: 150px;
+    
+}
+.skills{
+    background-color: #ecf0f1;
+
 }
