@@ -1,3 +1,42 @@
 *{
     margin:0;
+    background:transparent;
+    border: red solid 1px;
+
+}
+/* TODO: revisar si se queda con esta altura cada proyecto */
+.container-projects
+{
+    box-sizing: border-box;
+    border: red solid 1px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4,1fr) 5rem;
+    min-height: 100vh;
+    grid-template-areas: 
+    "img1 img1 img1 img1 desc desc"
+    "img1 img1 img1 img1 desc desc"
+    "img2 img2 img3 img3 desc desc"
+    "img2 img2 img3 img3 desc desc"
+    "pills pills pills pills pills pills"
+    ;
+}
+.e1{
+    grid-area: img1;
+    min-height: 20vh;
+}
+.e2{
+    min-height: 20vh;
+    grid-area: img2;
+}
+.e3{
+    min-height: 20vh;
+    grid-area: img3;
+}
+.desc{
+    min-height: 20vh;
+    grid-area: desc;
+}
+.pills{
+    grid-area: pills;
+    min-height: 5rem;
 }
