@@ -8,6 +8,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LaptopComponent } from './components/laptop/laptop.component';
+// TODO: remover este componente y hacer el routing desde contact
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -19,7 +22,8 @@ import { LaptopComponent } from './components/laptop/laptop.component';
     AboutComponent,
     SkillsComponent,
     NavbarComponent,
-    LaptopComponent],
+    LaptopComponent,
+    ContactFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
