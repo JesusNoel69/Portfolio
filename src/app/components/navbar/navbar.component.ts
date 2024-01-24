@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component} from '@angular/core';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -8,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);    
+    if (element) {
+      const navbarHeight = 60; // Reemplaza con la altura de tu navbar
+      const offsetPosition = element.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      return false;
+    }
+    return true;
+  }
 }

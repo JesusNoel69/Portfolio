@@ -2,12 +2,16 @@
     margin-bottom: 0;
 }
 .ul{
-    max-width: 350px;
+    max-width: 15rem;
     border: #34495e 1px solid;
     background: transparent;
 }
 .ul,a, li{
     background: #ecf0f1;
+
+}
+li,a{
+    cursor:pointer;
 }
 .border-svg{
     border:#34495e solid 2px;

@@ -2,22 +2,27 @@
 <ul class="ul fixed-top mt-2 rounded-pill p-1 flex-wrap 
 container list-group d-flex flex-row gap-2 list-unstyled justify-content-center">
     <!-- TODO: ver si se necesita comunicacion con componentes para referencias secciones -->
-    <li class="rounded-circle"><a class="text-decoration-none rounded-circle" href="">
-        <img class="rounded-circle border-svg" src="../../../assets/home-2.svg" alt="" width="30" height="30">
+    <li class="rounded-circle"><a 
+        class="text-decoration-none rounded-circle" href="#start">
+        <img class="rounded-circle border-svg" src="../../../assets/home-2.svg" alt="Home" width="30" height="30">
     </a></li>
-    <li class="rounded-circle"><a class="text-decoration-none rounded-circle " href="">
-        Contact
+    <li class="rounded-circle"><a 
+        class="text-decoration-none rounded-circle " href="#contact">
+        <img class="rounded-circle border-svg" src="../../../assets/address-book.svg" alt="Contact" width="30" height="30">
     </a></li>
-    <li class="rounded-circle"><a class="text-decoration-none rounded-circle" href="">
-        Projects
+    <li class="rounded-circle"><a (click)="scrollToSection('skills')"
+        class="text-decoration-none rounded-circle">
+        <img class="rounded-circle border-svg" src="../../../assets/script.svg" alt="Skills" width="30" height="30">
     </a></li>
-    <li class="rounded-circle"><a class="text-decoration-none rounded-circle" href="">
-        Skills
+    <li class="rounded-circle"><a
+        class="text-decoration-none rounded-circle" href="#projects">
+        <img class="rounded-circle border-svg" src="../../../assets/code.svg" alt="Projects" width="30" height="30">
     </a></li>
-    <li class="rounded-circle"><a class="text-decoration-none rounded-circle" href="">
-        About
+    <li class="rounded-circle"><a
+        class="text-decoration-none rounded-circle" href="#about">
+        <img class="rounded-circle border-svg" src="../../../assets/user.svg" alt="About" width="30" height="30">
     </a></li>
-    <li class="rounded-circle"><a class="text-decoration-none rounded-circle" href="">
-        Theme
+    <li class="rounded-circle"><a class="text-decoration-none rounded-circle">
+        <img class="rounded-circle border-svg" src="../../../assets/settings-automation.svg" alt="General settings" width="30" height="30">
     </a></li>
 </ul>

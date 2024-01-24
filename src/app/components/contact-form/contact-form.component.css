@@ -2,7 +2,17 @@ label, input, textarea{
     margin-bottom: 1rem;
     min-width: 10rem;
 }
-
+form{
+    background: transparent;
+}
 textarea{
-    min-height: 15rem;
+    min-height: 10rem;
+}
+.container-contact-form{
+    padding-top: 5rem;
+    min-height: 100vh;
+    background: white;
+}
+a{
+    cursor: pointer;
 }
