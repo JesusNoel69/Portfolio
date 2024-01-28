@@ -9,8 +9,8 @@ textarea{
     min-height: 10rem;
 }
 .container-contact-form{
-    padding-top: 5rem;
-    min-height: 100vh;
+    padding-top: 2.5rem;
+    /* min-height: 100vh; */
     background: white;
 }
 a{
