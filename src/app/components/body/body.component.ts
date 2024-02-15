@@ -5,6 +5,7 @@ import { EducationComponent } from '../education/education.component';
 import { LaptopComponent } from '../laptop/laptop.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { SkillsComponent } from '../skills/skills.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -15,7 +16,8 @@ import { SkillsComponent } from '../skills/skills.component';
     EducationComponent,
     LaptopComponent,
     ProjectsComponent,
-    SkillsComponent],
+    SkillsComponent,
+  HttpClientModule],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css'
 })

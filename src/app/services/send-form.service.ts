@@ -8,12 +8,12 @@ export class SendFormService{
 
 constructor(private http: HttpClient) {
 }
-  submitData(data:NgForm){
-    this.http.post<any>("http://localhost:5074",data.value.name)
-    .subscribe({
-      next:response=>{console.log(response)},
-      error: error=>console.log(error)}
-    );
-  }  
+submitData(name: string, message: string) {
+  //console.log(name + ' ' + message);
+  this.http.post<any>("http://localhost:5018/api/DatosForm", { name: name, message : message })//, { headers }
+      .subscribe({
+          next: response => { console.log(response) },
+          error: error => console.log(error)
+      });
+  }
 }
-

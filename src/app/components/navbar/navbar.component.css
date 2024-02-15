@@ -14,5 +14,15 @@ li,a{
     cursor:pointer;
 }
 .border-svg{
-    border:#34495e solid 2px;
+    border:#34495e solid 1.5px;
+    transition: 300ms ease;
+}
+.border-svg:hover{
+    /* margin-bottom: -.5rem; */
+    scale:1.2;
+    transition: 300ms ease;
+}
+
+img{
+    background: #08549c96;
 }
