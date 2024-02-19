@@ -1,13 +1,17 @@
-<div class="container-contact-form container-fluid w-100 h-auto d-flex flex-column align-items-center mx-auto mb-2 ">
-    <h3 class="text-center mt-3">
-        <a href="/"><img src="../../../assets/arrow-narrow-left.svg" alt=""></a>
+<div class="container-contact-form container-fluid w-100 h-auto d-flex flex-column align-items-center mx-auto mb-2 
+background-transparent h-100">
+    <h3 class="text-center mt-3 background-transparent d-flex">
+        <a href="/" class="background-transparent"><img
+            class="background-transparent arrow"
+             src="../../../assets/arrow-narrow-left.svg" alt="home"></a>
         Contactame directamente</h3>
     
-    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center w-100 h-100 mx-auto rounded pb-2 pt-2 ">
+    <div class="container-color d-flex flex-column flex-md-row justify-content-center 
+    align-items-center w-100 h-100 mx-auto rounded pb-2 pt-2 mb-5">
         <form #myForm="ngForm" (ngSubmit)="submitForm(myForm)"
         class="flex-column flex-sm-row justify-content-center align-items-center w-100  w-md-100 h-75 gap-1 rounded">
-            <label class="d-block mb-1 mx-auto w-sm-75 w-75">Dejame un mensaje</label>
-            
+            <label class="d-block mb-1 mx-auto text-center w-sm-75 w-75 mt-3">Dejame un mensaje</label>
+
             <input  
               id="name" name="name"  type="text" 
               class="rounded d-block mb-1 mx-auto w-75 w-sm-75" 
@@ -17,18 +21,21 @@
               class="rounded d-block mb-1 mx-auto w-75 w-sm-75"
               placeholder="mensaje" ngModel></textarea>
 
-            <input type="submit"
-             class="rounded d-block mb-1 mx-auto w-75 w-sm-75">
+            <input type="submit" (mousedown)="reduceSizeButtonClicked($event)"
+            (mouseup)="growSizeButtonClicked($event)"
+            id="buttonStyle" name="buttonStyle"
+             class="submit-button rounded d-block mb-1 mx-auto w-75 w-sm-75">
         </form>
         <!-- TODO: verificar que si se centre con la ubicacion -->
-        <div class="flex-column flex-sm-row ml-sm-3 mx-auto justify-content-center mx-auto align-items-center w-100">
-            <div class="text-center ">
-                <p class="lh-1">Ciudad juarez, Chih.</p>
-                <p class="lh-1 ">CP. 32180</p>
-                <p class="lh-1"><img  src="../../../assets/phone.svg" alt="phone">+526969696</p>
+        <div class="flex-column flex-sm-row ml-sm-3 mx-auto justify-content-center mx-auto align-items-center w-100
+        background-transparent">
+            <div class="text-center background-transparent ">
+                <p class="lh-1 background-transparent">Ciudad juarez, Chih.</p>
+                <p class="lh-1 background-transparent">CP. 32180</p>
+                <p class="lh-1 background-transparent"><img  class="background-transparent" src="../../../assets/phone.svg" alt="phone">+526969696</p>
             </div>
-            <div class="container-contact-form container-fluid w-50 h-auto d-flex flex-column align-items-center mx-auto p-0">
-                <img class="w-100 h-50 rounded" src="../../../assets/angular-17-img.jpg" alt="">
+            <div class="rounded container-contact-form container-fluid w-50 h-auto d-flex flex-column align-items-center mx-auto p-0">
+                <img class="w-100 h-50 rounded background-transparent" src="../../../assets/angular-17-img.jpg" alt="">
             </div>
         </div>
     </div>

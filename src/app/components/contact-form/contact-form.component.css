@@ -1,17 +1,39 @@
+
 label, input, textarea{
     margin-bottom: 1rem;
     min-width: 10rem;
+    background: whitesmoke;
+    border: 1px #34495e solid;
 }
-form{
+label{
+    border:none;
     background: transparent;
+}
+.submit-button{
+    border: none;
+    background: #1969b4a7;
+    color:white;
+}
+.submit-button:hover{
+    background: #2e82d1a7;
+}
+
+.arrow{
+    margin-top: -5px;
+}
+form, .container-color{
+    background: white;
 }
 textarea{
     min-height: 10rem;
+
+}
+.background-transparent{
+    background:transparent;
 }
 .container-contact-form{
     padding-top: 2.5rem;
-    /* min-height: 100vh; */
-    background: white;
+    /* background: white; */
 }
 a{
     cursor: pointer;
