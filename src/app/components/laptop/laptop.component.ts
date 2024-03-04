@@ -102,9 +102,12 @@ export class LaptopComponent implements OnInit{
     // Call tick again on the next frame
     requestAnimationFrame(this.animateGeometry);
     // Render
+    this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas, alpha: true });
     this.renderer.render(this.scene, this.camera);
   };
   
+  //TODO: cambiar los document por tags # 
+  //TODO: ver afterrender y beforeRender para reemplazar por window y document
   createLaptop(){
     //const controls = new OrbitControls(camera, renderer.domElement);
     this.canvas = document.getElementById('canvas-laptop');
@@ -190,8 +193,8 @@ export class LaptopComponent implements OnInit{
     this.controls = new OrbitControls( this.camera, this.renderer.domElement );
     this.camera.position.set( 0, 5, 50 );
     //
-    document.body.style.backgroundColor="#2c3e50";/// se requere para repintar el background del componente que qgenera la laptop
 
+   
     this.clock = new THREE.Clock();
     this.resizeInitialElements();
     this.animateGeometry();

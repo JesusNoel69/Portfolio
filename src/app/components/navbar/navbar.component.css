@@ -22,6 +22,7 @@ li,a{
     scale:1.2;
     transition: 300ms ease;
 }
+ /* Escalar el ícono SVG del elemento anterior */
 
 img{
     background: #08549c96;

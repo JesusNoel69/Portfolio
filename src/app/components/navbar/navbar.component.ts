@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -20,4 +20,5 @@ export class NavbarComponent {
     }
     return true;
   }
+  @Input() showNavbar: boolean;
 }

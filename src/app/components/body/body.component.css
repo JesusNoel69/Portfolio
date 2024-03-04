@@ -1,6 +1,7 @@
 *{
     margin: 0;
     background: transparent;
+    scrollbar-color: red;
 }
 footer{
     border-top: .3rem solid #34495e;
