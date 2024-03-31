@@ -15,8 +15,8 @@
     grid-template-areas: 
     "img1 img1 img1 img1 desc desc"
     "img1 img1 img1 img1 desc desc"
-    "img2 img2 img3 img3 desc desc"
-    "img2 img2 img3 img3 desc desc"
+    "img2 img2 img2 img2 desc desc"
+    "img2 img2 img2 img2 desc desc"
     "pills pills pills pills pills pills"
     ;
 }
@@ -27,10 +27,6 @@
 .e2{
     min-height: 20vh;
     grid-area: img2;
-}
-.e3{
-    min-height: 20vh;
-    grid-area: img3;
 }
 .desc{
     min-height: 20vh;

@@ -1,0 +1,29 @@
+[
+    {
+        "title":"Redes basico",
+        "carta":"carta de merito obtenida",
+        "name":"CCNAv7: Introduction to Networks",
+        "platform":"Cisco",
+        "terminated":"3 Junio 2022",
+        "credentialLink":"https://www.credly.com/badges/e54ef7f1-9bc3-4b45-8563-330e6b45b538",
+        "image":"../../../assets/images/CCNA-Introduccion.png"
+    },
+    {
+        "title":"Redes intermedio",
+        "carta":"",
+        "name":"CCNA: Switching, Routing, and Wireless Essentials",
+        "platform":"Cisco",
+        "terminated":"Agosto 2022",
+        "credentialLink":"",
+        "image":""
+    },
+    {
+        "title":"Ciberseguridad",
+        "carta":"",
+        "name":"Introduction to Cybersecurity",
+        "platform":"Cisco",
+        "terminated":"19 Abril 2022",
+        "credentialLink":"https://www.credly.com/badges/121cdd5e-76d8-4805-8d18-8391760f7374",
+        "image":"../../../assets/images/Ciberseguridad.png"
+    }
+]

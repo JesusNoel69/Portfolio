@@ -1,43 +1,20 @@
-
 <div class="container-fluid w-100 container-skills">
     <h2 class="text-center">Habilidades</h2>
     <!-- flex-wrap para que caigan las imagenes al no haber espacio -->
-
-    <ul class="list-group list-unstyled d-flex flex-row align-items-center gap-2 justify-content-center mt-5 mb-5 w-auto  
+    <ul class="list-group list-unstyled d-flex flex-row align-items-center gap-lg-3 gap-2 justify-content-center mt-5 w-auto  
     flex-wrap">
+    @for(image of images; track $index){
         <li>
-            <img src="../../../assets/c-sharp-c.svg" alt="C Sharp Logo" width="30" height="30">
+            <img
+             [src]=image.source [alt]=image.alt [width]=image.width [height]=image.height
+             [id]="image.id" (click)="changeProperties($event,image.id)"
+             [ngClass]="{
+                'skills': image.id == 'MySQL' || image.id == 'Docker',
+                'selected': (selectedImageId === image.id),
+                'not-selected': (selectedImageId !== image.id)&&image.id!='Docker' && image.id!='MySQL'
+            }">
         </li>
-        <li>
-            <img class="skills rounded"src="../../../assets/docker.svg" alt="C Sharp Logo" width="30" height="30">
-        </li>
-        <li>
-            <img src="../../../assets/file-type-angular.svg" alt="C Sharp Logo" width="30" height="30">
-        </li>
-        <li>
-            <img src="../../../assets/Git-Icon-1788C.svg" alt="C Sharp Logo" width="30" height="30">
-        </li>
-        <li>
-            <img src="../../../assets/icons8-javascript.svg" alt="C Sharp Logo" width="30" height="30">
-        </li>
-        <li>
-            <img src="../../../assets/typescript.svg" alt="C Sharp Logo" width="30" height="30">
-        </li>
-        <li>
-            <img src="../../../assets/HTML5_logo.svg" alt="C Sharp Logo" width="30" height="30">
-        </li>
-        <li>
-            <img src="../../../assets/CSS3_logo.svg" alt="C Sharp Logo" width="30" height="30">
-        </li>
-        <li>
-            <img src="../../../assets/logo_net.svg" alt="" width="35" height="30">
-        </li>
-        <li>
-            <img class="skills rounded "src="../../../assets/mysql-icon.svg" alt="" width="35" height="30">
-        </li>
-        <li>
-            <img src="../../../assets/bootstrap-5-1.svg" alt="" width="35" height="30">
-        </li>
+    }
     </ul>
-
+    <p class="w-100 rounded bg-white mt-1 mb-5">{{description}}</p>
 </div>

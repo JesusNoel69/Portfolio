@@ -7,29 +7,22 @@ gap-2  principal-container mt-3" >
             en Sistemas Computacionales </p>
         <p><strong>Fecha de graduación:</strong> En progreso...</p>
     </article>
-    <article class="w-25 rounded">
-        <h3 class="rounded">Redes basico</h3>
-        <p><strong>Carta de merito obtenida</strong></p>
-        <p><strong>Nombre del Curso:</strong> CCNAv7: Introduction to Networks</p>
-        <p><strong>Plataforma:</strong> Cisco</p>
-        <p><strong>Fecha de finalizaci&oacute;n:</strong> 3 Junio 2022</p>
-        <p><strong>Insignia dgital</strong></p>
-        <a target="_blank" href="https://www.credly.com/badges/e54ef7f1-9bc3-4b45-8563-330e6b45b538">
-            <img class="size-img" src="../../../assets/CCNA-Introduccion.png" alt=""></a>
-    </article>
-    <article class="w-25 rounded">
-        <h3 class="rounded">Redes intermedo</h3>
-        <p><strong>Nombre del Curso:</strong> CCNA: Switching, Routing, and Wireless Essentials</p>
-        <p><strong>Plataforma:</strong> Cisco</p>
-        <p><strong>Fecha de finalizaci&oacute;n:</strong> Agosto 2022</p>
-    </article>
-    <article class="w-25 rounded">
-        <h3 class="rounded">Ciberseguridad</h3>
-        <p><strong>Nombre del Curso:</strong> Introduction to Cybersecurity</p>
-        <p><strong>Plataforma:</strong> Cisco</p>
-        <p><strong>Fecha de finalizaci&oacute;n:</strong> 19 Abril 2022</p>
-        <p><strong>Insignia dgital</strong></p>
-        <a target="_blank" href="https://www.credly.com/badges/121cdd5e-76d8-4805-8d18-8391760f7374">
-            <img class="size-img" src="../../../assets/Ciberseguridad.png" alt=""></a>
-    </article>
+    
+    @for (card of info; track $index) {
+        <article class="w-25 rounded">
+            <h3 class="rounded">{{card.title}}</h3>
+            @if (card.carta!=null) {
+                <p><strong>{{card.carta}}</strong></p>
+            }
+            <p><strong>Nombre del Curso:</strong> {{card.name}}</p>
+            <p><strong>Plataforma:</strong> {{card.platform}}</p>
+            <p><strong>Fecha de finalizaci&oacute;n:</strong> {{card.terminated}}</p>
+            @if (card.credentialLink!="") {
+                <p><strong>Insignia dgital</strong></p>
+                <a target="_blank" [href]=card.credentialLink>
+                    <img class="size-img" [src]=card.image alt="credential"></a>
+            }
+
+        </article>
+    }
 </div>

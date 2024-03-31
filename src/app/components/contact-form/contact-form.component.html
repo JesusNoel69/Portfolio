@@ -1,9 +1,9 @@
-<div class="container-contact-form container-fluid w-100 h-auto d-flex flex-column align-items-center mx-auto mb-2 
+<div class="container-contact-form container-fluid w-100 h-75 d-flex flex-column align-items-center mx-auto mb-2 
 background-transparent h-100">
     <h3 class="text-center mt-3 background-transparent d-flex">
         <a href="/" class="background-transparent"><img
             class="background-transparent arrow"
-             src="../../../assets/arrow-narrow-left.svg" alt="home"></a>
+             src="../../../assets/images/arrow-narrow-left.svg" alt="home"></a>
         Contactame directamente</h3>
     
     <div class="container-color d-flex flex-column flex-md-row justify-content-center 
@@ -26,16 +26,19 @@ background-transparent h-100">
             id="buttonStyle" name="buttonStyle"
              class="submit-button rounded d-block mb-1 mx-auto w-75 w-sm-75">
         </form>
-        <div class="flex-column flex-sm-row ml-sm-3 mx-auto justify-content-center mx-auto align-items-center w-100
+        <div class="flex-column flex-sm-row mt-sm-5 justify-content-center mx-auto align-items-center w-100 h-75 
         background-transparent">
-            <div class="text-center background-transparent ">
-                <p class="lh-1 background-transparent">Ciudad juarez, Chih.</p>
-                <p class="lh-1 background-transparent">CP. 32180</p>
-                <p class="lh-1 background-transparent"><img  class="background-transparent" src="../../../assets/phone.svg" alt="phone">+526969696</p>
+            <div class="text-center background-transparent">
+                <p class="background-transparent mb-0">Ciudad juarez, Chih.</p>
+                <p class="background-transparent mb-0">CP. 32180</p>
+                <p class="background-transparent mb-0"><img  class="background-transparent" src="../../../assets/images/phone.svg" alt="phone">+526969696</p>
             </div>
-            <div class="rounded container-contact-form container-fluid w-50 h-auto d-flex flex-column align-items-center mx-auto p-0">
-                <img class="w-100 h-50 rounded background-transparent" src="../../../assets/angular-17-img.jpg" alt="">
-                
+            <div class="rounded container-contact-form container-fluid w-75 h-auto d-flex flex-column align-items-center mx-auto p-0">
+                <!-- <img class="w-100 h-50 rounded background-transparent" src="../../../assets/images/angular-17-img.jpg" alt=""> -->
+                @if (!this.isNotKey()) {
+                    <iframe class="w-100 h-100 rounded background-transparent" width="600" height="450" style="border:0" Loading="lazy" allowfullscreen
+                    [src]="getKey()"></iframe>
+                }
             </div>
         </div>
     </div>

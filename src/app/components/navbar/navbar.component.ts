@@ -10,7 +10,7 @@ export class NavbarComponent {
   scrollToSection(sectionId: string) {
     const element = document.getElementById(sectionId);    
     if (element) {
-      const navbarHeight = 60; // Reemplaza con la altura de tu navbar
+      const navbarHeight = 60; // Reemplaza con la altura del navbar
       const offsetPosition = element.offsetTop - navbarHeight;
       window.scrollTo({
         top: offsetPosition,

@@ -21,7 +21,7 @@ label{
 .arrow{
     margin-top: -5px;
 }
-form, .container-color{
+form, .container-color, h3{
     background: white;
 }
 textarea{
@@ -37,4 +37,7 @@ textarea{
 }
 a{
     cursor: pointer;
+}
+iframe{
+    min-height: 200px;
 }
