@@ -16,7 +16,7 @@ coral red: #ff6f61      //text|titles|span
     padding:0;
     /* background: rgb(52,73,94); */
     background: linear-gradient(90deg, rgba(52,73,94,1) 0%, rgba(52,152,219,1) 29%, rgba(44,62,80,1) 89%);
-    color:#87ceeb;
+    color:  #F7F9FB;/*#87ceeb;*/
     border:none;
     border-color: #ecf0f1;/*TODO: hr es un borde*/
     scrollbar-width: none;
