@@ -5,14 +5,16 @@
     flex-wrap">
     @for(image of images; track $index){
         <li>
+            <!--(click)="changeProperties($event,image.id)"-->
             <img
              [src]=image.source [alt]=image.alt [width]=image.width [height]=image.height
-             [id]="image.id" (click)="changeProperties($event,image.id)"
+             [id]="image.id" 
              [ngClass]="{
                 'skills': image.id == 'MySQL' || image.id == 'Docker',
                 'selected': (selectedImageId === image.id),
                 'not-selected': (selectedImageId !== image.id)&&image.id!='Docker' && image.id!='MySQL'
             }">
+            
         </li>
     }
     </ul>
