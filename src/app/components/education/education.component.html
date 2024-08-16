@@ -1,4 +1,4 @@
-<h2 class="text-center ">Mi educaci&oacute;n/experiencia</h2>
+<h2 class="text-center ">Mi educaci&oacute;n</h2>
 <div class="d-flex flex-wrap justify-content-center px-sm-5
 gap-2  principal-container mt-3" >
     <article class="rounded w-25">
@@ -9,7 +9,7 @@ gap-2  principal-container mt-3" >
     </article>
     
     @for (card of info; track $index) {
-        <article class="w-25 rounded">
+        <article class="w-25 rounded p-1">
             <h3 class="rounded">{{card.title}}</h3>
             @if (card.carta!=null) {
                 <p><strong>{{card.carta}}</strong></p>
@@ -17,12 +17,20 @@ gap-2  principal-container mt-3" >
             <p><strong>Nombre del Curso:</strong> {{card.name}}</p>
             <p><strong>Plataforma:</strong> {{card.platform}}</p>
             <p><strong>Fecha de finalizaci&oacute;n:</strong> {{card.terminated}}</p>
+            @if(card.certificate!=""){
+                <a target="_blank" [href]=card.certificate>
+                    <p class="mt-1 mb-1"><strong>Certificación
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-external-link" width="15" height="15" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" />
+                        </svg>
+                    </strong></p>
+                </a>
+            }
             @if (card.credentialLink!="") {
                 <p><strong>Insignia dgital</strong></p>
                 <a target="_blank" [href]=card.credentialLink>
                     <img class="size-img" [src]=card.image alt="credential"></a>
             }
-
         </article>
     }
 </div>
+
