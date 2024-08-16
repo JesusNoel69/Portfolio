@@ -41,3 +41,8 @@ a{
 iframe{
     min-height: 200px;
 }
+.popover{
+    color:white;
+    background: #2e82d1a7;
+    border: none;
+}
