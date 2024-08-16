@@ -5,12 +5,6 @@
 footer{
     border-top: .3rem solid #34495e;
 }
-.video{
-    box-sizing: border-box;
-    background: transparent;
-    height:400px;
-    border:.2rem red solid;
-}
 h1{
     position:absolute;
     top:0;
