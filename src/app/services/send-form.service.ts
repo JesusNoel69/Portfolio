@@ -1,18 +1,15 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
-export class SendFormService{
+export class SendFormService {
 
-constructor(private http: HttpClient) {
-}
-submitData(name: string, message: string) {
-  //console.log(name + ' ' + message);
-  this.http.post<any>("http://localhost:5018/api/DatosForm", { name: name, message : message })//, { headers }
-      .subscribe({
-          next: response => { console.log(response) },
-          error: error => console.log(error)
-      });
+  constructor(private http: HttpClient) {}
+
+  submitData(name: string, message: string): Observable<any> {
+    return this.http.post<any>("http://localhost:5018/api/DatosForm", { name, message });
   }
 }
