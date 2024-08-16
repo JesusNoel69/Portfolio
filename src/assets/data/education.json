@@ -5,6 +5,7 @@
         "name":"CCNAv7: Introduction to Networks",
         "platform":"Cisco",
         "terminated":"3 Junio 2022",
+        "certificate":"https://raw.githubusercontent.com/JesusNoel69/Images-for-projects/master/portfolio-data/JESUS%20NOELZAMORA%20GOMEZ-Redes%201CD%20-%20ITN2-certificate.pdf",
         "credentialLink":"https://www.credly.com/badges/e54ef7f1-9bc3-4b45-8563-330e6b45b538",
         "image":"../../../assets/images/CCNA-Introduccion.png"
     },
@@ -14,6 +15,7 @@
         "name":"CCNA: Switching, Routing, and Wireless Essentials",
         "platform":"Cisco",
         "terminated":"Agosto 2022",
+        "certificate":"",
         "credentialLink":"",
         "image":""
     },
@@ -24,6 +26,27 @@
         "platform":"Cisco",
         "terminated":"19 Abril 2022",
         "credentialLink":"https://www.credly.com/badges/121cdd5e-76d8-4805-8d18-8391760f7374",
+        "certificate":"https://raw.githubusercontent.com/JesusNoel69/Images-for-projects/master/portfolio-data/JESUS%20NOELZAMORA%20GOMEZ-Introduction%20to%20-certificate.pdf",
         "image":"../../../assets/images/Ciberseguridad.png"
+    },
+    {
+        "title":"Python",
+        "carta":"",
+        "name":"Python Basics",
+        "platform":"Coursera",
+        "terminated":"21 Octubre 2020",
+        "credentialLink":"",
+        "certificate":"https://coursera.org/share/89c5340b69e487044d46786209e417fc",
+        "image":""
+    },
+    {
+        "title":"Interfaces de usuario",
+        "carta":"",
+        "name":"Evaluating User Interfaces",
+        "platform":"Coursera",
+        "terminated":"3 Noviembre 2020",
+        "credentialLink":"",
+        "certificate":"https://coursera.org/share/89c5340b69e487044d46786209e417fc",
+        "image":""
     }
 ]

@@ -4,72 +4,63 @@
         "alt": "C# Icon",
         "width":"30",
         "height":"30",
-        "id":"Csharp",
-        "description":"description c#"
+        "id":"CSharp"
     },
     {
         "source":"../../../assets/images/docker.svg",
         "alt": "Docker Icon",
         "width":"30",
         "height":"30",
-        "id":"Docker",
-        "description":"description docker"
+        "id":"Docker"
     },
     {
         "source":"../../../assets/images/file-type-angular.svg",
         "alt": "Angular Icon",
         "width":"30",
         "height":"30",
-        "id":"Angular",
-        "description":"description angular"
+        "id":"Angular"
     },
     {
         "source":"../../../assets/images/Git-Icon-1788C.svg",
         "alt": "Git Icon",
         "width":"30",
         "height":"30",
-        "id":"Git",
-        "description":"description git"
+        "id":"Git"
     },
     {
         "source":"../../../assets/images/icons8-javascript.svg",
         "alt": "JavaScript Icon",
         "width":"30",
         "height":"30",
-        "id":"JavaScript",
-        "description":"description javascript"
+        "id":"JavaScript"
     },
     {
         "source":"../../../assets/images/typescript.svg",
         "alt": "TypeScript Icon",
         "width":"30",
         "height":"30",
-        "id": "TypeScript",
-        "description":"description typescript"
+        "id": "TypeScript"
     },
     {
         "source":"../../../assets/images/HTML5_logo.svg",
         "alt": "HTML5 Icon",
         "width":"30",
         "height":"30",
-        "id":"HTML5",
-        "description":"description html5"
+        "id":"HTML5"
     },
     {
         "source":"../../../assets/images/CSS3_logo.svg",
         "alt": "CSS3 Icon",
         "width":"30",
         "height":"30",
-        "id":"CSS3",
-        "description":"description css3"
+        "id":"CSS3"
     },
     {
         "source":"../../../assets/images/logo_net.svg",
         "alt": "NET Icon",
         "width":"30",
         "height":"30",
-        "id":"NET",
-        "description":"description NET"
+        "id":"NET"
     },
     {
         "source":"../../../assets/images/mysql-icon.svg",
@@ -84,8 +75,7 @@
         "alt": "Bootstrap Icon",
         "width":"35",
         "height":"30",
-        "id":"Bootstrap",
-        "description":"description bootstrap"
+        "id":"Bootstrap"
 
     }
 ]
