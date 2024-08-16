@@ -41,3 +41,4 @@ testem.log
 .DS_Store
 Thumbs.db
 enviroment.env
+src/assets/data/CV.pdf
