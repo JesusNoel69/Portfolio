@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
 import { EducationComponent } from '../education/education.component';
-import { LaptopComponent } from '../laptop/laptop.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FadeInDirective } from '../directives/fade-in.directive';
 
 
 @Component({
@@ -14,10 +14,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [AboutComponent,
     ContactComponent,
     EducationComponent,
-    LaptopComponent,
     ProjectsComponent,
     SkillsComponent,
-  HttpClientModule],
+    HttpClientModule,
+    FadeInDirective],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css'
 })
