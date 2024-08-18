@@ -1,7 +1,11 @@
+
+
 # PortfolioJesus
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
+## Deployed 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dcff57cd-6cff-46c5-82fa-b2404f111be9/deploy-status)](https://app.netlify.com/sites/portfolio-jesus-n/deploys)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
