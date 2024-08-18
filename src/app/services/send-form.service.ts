@@ -10,6 +10,6 @@ export class SendFormService {
   constructor(private http: HttpClient) {}
 
   submitData(name: string, message: string): Observable<any> {
-    return this.http.post<any>("http://localhost:5018/api/DatosForm", { name, message });
+    return this.http.post<any>("https://portfolio-backend-lstz.onrender.com/api/DatosForm", { name, message });
   }
 }

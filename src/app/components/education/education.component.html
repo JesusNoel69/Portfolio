@@ -28,7 +28,7 @@ gap-2  principal-container mt-3" >
             @if (card.credentialLink!="") {
                 <p><strong>Insignia dgital</strong></p>
                 <a target="_blank" [href]=card.credentialLink>
-                    <img class="size-img" [src]=card.image alt="credential"></a>
+                    <img class="size-img rounded-1" loading="lazy" [src]=card.image alt="credential"></a>
             }
         </article>
     }

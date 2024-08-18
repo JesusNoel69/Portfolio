@@ -19,7 +19,7 @@ coral red: #ff6f61      //text|titles|span
     color:  #F7F9FB;/*#87ceeb;*/
     border:none;
     border-color: #ecf0f1;/*TODO: hr es un borde*/
-    scrollbar-width: none;
+    scrollbar-width: thin;
 
 }
 h1, h2{
