@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jesús Noel — Full-Stack Developer | .NET, C#, Angular</title>
+    <meta
+      name="description"
+      content="Portfolio of Jesús Noel, a Full-Stack Developer specializing in .NET/C#, Angular, SQL, and Clean Architecture. Projects, certifications, and contact."
+    />
+    <link rel="icon" href="favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jesús Noel — Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Explore my projects, certifications, and skills in .NET/C#, Angular, SQL, and Clean Architecture."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jesús Noel",
+        "jobTitle": "Full-Stack Developer",
+        "url": "https://tudominio.com/",
+        "sameAs": [
+          "https://github.com/JesusNoel69",
+          "https://www.linkedin.com/in/jesus-noel-zamora-gomez"
+        ],
+        "knowsAbout": [
+          ".NET",
+          "C#",
+          "Angular",
+          "TypeScript",
+          "SQL",
+          "MySQL",
+          "Clean Architecture",
+          "Docker",
+          "UI/UX"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <nav aria-label="Primary">
+      <select id="navbar">
+        <option value="initial">Start</option>
+        <option value="about">About</option>
+        <option value="trophies">Trophies</option>
+        <option value="skills">Skills</option>
+        <option value="projects">Projects</option>
+        <option value="contact">Contact</option>
+      </select>
+    </nav>
+
+    <dialog id="dialog">
+      <div class="dlg-wrap">
+        <div class="dlg-deco deco-tl" aria-hidden="true"></div>
+        <div class="dlg-deco deco-br" aria-hidden="true"></div>
+
+        <div class="dlg-card">
+          <div class="dlg-header">
+            <h4 id="name"></h4>
+            <button id="dialog-close" type="button">✕</button>
+          </div>
+          <div id="dlg-display" class="dlg-display">
+            <div class="dlg-container">
+              <p id="description"></p>
+              <img id="dialog-image" class="dlg-image" hidden />
+              <div id="dialog-skills" class="dlg-skills" hidden></div>
+              <div id="dialog-actions" class="dlg-actions"></div>
+            </div>
+
+            <div>
+              <img id="dialog-qr" class="dlg-qr" hidden />
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <!-- Loader -->
+    <div id="loader" class="loader" role="status" aria-live="polite">
+      <div class="loader-card">
+        <div class="spinner" aria-hidden="true"></div>
+        <p class="loader-title">Loading portfolio…</p>
+        <p class="loader-sub">Preparing 3D scene</p>
+
+        <div class="progress" aria-hidden="true">
+          <div id="loader-bar" class="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="three-wrap"
+      style="position: relative; width: 100vw; height: 100vh"
+    ></div>
+
+    <script type="module" src="/main.js" defer></script>
+  </body>
+</html>
