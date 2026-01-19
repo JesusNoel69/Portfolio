@@ -404,8 +404,22 @@ function fitCameraToObject(camera, object, controls, offset = globalOffset) {
   controls.update();
 }
 
+let needsPick = false;
+//only if pointer move iit's possible
+renderer.domElement.addEventListener("pointermove", (e) => {
+  if (isTouch) return;
+  const rect = renderer.domElement.getBoundingClientRect();
+  const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
+  mouseNdc.set(x, y);
+  needsPick = true;
+});
+
 function animate() {
-  updateAimHighlight();
+  if (!isTouch && needsPick) {
+    updateAimHighlight();
+    needsPick = false;
+  }
   /*console.log(
     "controls target, camera,  cube position, ",
     controls.target,
