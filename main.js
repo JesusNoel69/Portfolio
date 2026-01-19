@@ -161,7 +161,7 @@ scene.add(cube);
 loader.setDRACOLoader(dracoLoader);
 
 loader.load(
-  "./models/portfolio_scene.draco.glb",
+  "/models/portfolio_scene.draco.glb",
   (gltf) => {
     const model = gltf.scene;
     scene.add(model);
