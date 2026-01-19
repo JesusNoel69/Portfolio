@@ -270,8 +270,52 @@ const outputPass = new OutputPass();
 composer.addPass(outputPass);
 
 //document.body.appendChild(renderer.domElement);
-document.getElementById("three-wrap").appendChild(renderer.domElement);
+const wrap = document.getElementById("three-wrap");
 
+wrap.appendChild(renderer.domElement);
+
+const isTouch = matchMedia("(pointer: coarse)").matches;
+//disable remark on mobile, becuse it's touch
+if (isTouch) {
+  outlinePass.enabled = false;
+}
+//reduces piel ratio for vertical mobile
+function getDpr() {
+  const dpr = window.devicePixelRatio || 1;
+  const portrait = window.innerHeight > window.innerWidth;
+
+  if (isTouch && portrait) return Math.min(dpr, 1.0);
+  if (isTouch) return Math.min(dpr, 1.25);
+  return Math.min(dpr, 2);
+}
+
+function applySizes() {
+  const w = wrap.clientWidth;
+  const h = wrap.clientHeight;
+  const dpr = getDpr();
+
+  renderer.setPixelRatio(dpr);
+  renderer.setSize(w, h, false);
+
+  composer.setSize(w, h);
+  if (composer.setPixelRatio) composer.setPixelRatio(dpr);
+
+  outlinePass.setSize(w, h);
+
+  fxaaPass.material.uniforms["resolution"].value.set(
+    1 / (w * dpr),
+    1 / (h * dpr),
+  );
+
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+}
+
+applySizes();
+window.addEventListener("resize", () => setTimeout(applySizes, 150));
+window.visualViewport?.addEventListener("resize", () =>
+  setTimeout(applySizes, 150),
+);
 //timmer for resize window
 let timer;
 window.addEventListener("resize", () => {
@@ -471,7 +515,7 @@ function updateAimHighlight() {
   if (top === lastTop) return;
   lastTop = top;
 
-  // OutlinePass espera MESHES
+  // OutlinePass wait meshes
   const selected = [];
   top.traverse((o) => {
     if (o.isMesh) selected.push(o);
